@@ -25,7 +25,7 @@ BANNER = r"""
 ****************************************************************
 """
 
-VERSION = "2.3.0"
+VERSION = "2.4.0"
 
 # ############### server config ###############
 HOST = "0.0.0.0"
@@ -48,14 +48,14 @@ PROXY_FETCHER = [
     "freeProxy01",
     "freeProxy02",
     "freeProxy03",
-    # "freeProxy04",
+    "freeProxy04",
     "freeProxy05",
     "freeProxy06",
     "freeProxy07",
     "freeProxy08",
     "freeProxy09",
-    "freeProxy13",
-    "freeProxy14"
+    "freeProxy10",
+    "freeProxy11"
 ]
 
 # ############# proxy validator #################
@@ -76,11 +76,15 @@ MAX_FAIL_COUNT = 0
 # proxyCheck时代理数量少于POOL_SIZE_MIN触发抓取
 POOL_SIZE_MIN = 20
 
+# ############# proxy attributes #################
+# 是否启用代理地域属性
+PROXY_REGION = True
+
 # ############# scheduler config #################
 
 # Set the timezone for the scheduler forcely (optional)
-# If it is running on a VM, and 
-#   "ValueError: Timezone offset does not match system offset" 
+# If it is running on a VM, and
+#   "ValueError: Timezone offset does not match system offset"
 #   was raised during scheduling.
 # Please uncomment the following line and set a timezone for the scheduler.
 # Otherwise it will detect the timezone from the system automatically.
